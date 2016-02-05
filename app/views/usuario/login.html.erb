@@ -1,0 +1,55 @@
+<br>
+<br>
+<br>
+<br>
+	<%= form_for :post,:url =>{:action=>:login} do |f| %>
+
+	<div class="form-group">
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+
+			<fieldset>
+<legend>Login ProTUC</legend>
+			<%= f.text_field(:Usuario, class: "form-control",placeholder:"Username")%>
+			</div>
+			<div class="col-sm-4"></div>	
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+			<%= f.text_field(:password, class: "form-control",placeholder:"Password")%>
+			</div>
+			<div class="col-sm-4"></div>	
+		</div>
+		
+
+	</div>
+	<br>
+	<div class="form-group">
+	<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+
+			<div class="btn-group btn-group-justified" role="group" >
+			  <div class="btn-group" role="group">
+					<%= f.submit(class: "btn btn-primary",value:'Aeptar') %>
+			  </div>
+
+			</div>
+
+    		<br>
+    		<br>
+    		<%=link_to "Registrarse", :action => "new"%>
+			</div>
+			<div class="col-sm-4"></div>	
+		</div>
+    
+
+	</div>
+<% end %>
+
+</fieldset>
+
+

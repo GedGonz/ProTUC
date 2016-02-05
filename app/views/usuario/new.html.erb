@@ -1,0 +1,122 @@
+<br>
+<br>
+<br>
+<br>
+	<%= form_for :persona,:url =>{:action=>:crear} do |f| %>
+
+	<div class="form-group">
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+
+				<fieldset>
+					<legend>Datos Persona</legend>
+	<div class="form-group <%= @Persona.errors[:nombre].any? ? " has-error has-feedback" : "" %>">
+		<%= f.text_field(:Nombre, class: "form-control",placeholder:"Nombre")%>
+
+		<span class="help-inline">
+      <%= @Persona.errors[:nombre].any? ? @Persona.errors[:nombre].to_s[/\w([^"]*)/] : "" %>
+      </span>
+	</div>
+				</div>
+				<div class="col-sm-4"></div>	
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+		<div class="form-group <%= @Persona.errors[:apellido].any? ? " has-error has-feedback" : "" %>">
+			<%= f.text_field(:Apellido, class: "form-control",placeholder:"Apellido")%>
+	  <span class="help-inline">
+      <%= @Persona.errors[:apellido].any? ? @Persona.errors[:apellido].to_s[/\w([^"]*)/] : "" %>
+      </span>
+		</div>	
+				</div>
+				<div class="col-sm-4"></div>	
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+		<div class="form-group <%= @Persona.errors[:pais].any? ? " has-error has-feedback" : "" %>">
+				<%= f.text_field(:Pais, class: "form-control",placeholder:"Pais")%>
+	  <span class="help-inline">
+      <%= @Persona.errors[:pais].any? ? @Persona.errors[:pais].to_s[/\w([^"]*)/] : "" %>
+      </span>
+		</div>
+				</div>
+				<div class="col-sm-4"></div>	
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+		<div class="form-group <%= @Persona.errors[:email].any? ? " has-error has-feedback" : "" %>">
+				<%= f.text_field(:Email, class: "form-control",placeholder:"Email")%>
+	  <span class="help-inline">
+      <%= @Persona.errors[:email].any? ? @Persona.errors[:email].to_s[/\w([^"]*)/] : "" %>
+      </span>
+		</div>
+				</div>
+				<div class="col-sm-4"></div>	
+			</div>
+
+			<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+			<br>
+			<fieldset>
+				<legend>Datos Usuario</legend>
+			<div class="form-group <%= @Persona.errors[:username].any? ? " has-error has-feedback" : "" %>">	
+			<%= f.text_field(:Username, class: "form-control",placeholder:"Username")%>
+			 <span class="help-inline">
+	        <%= @Persona.errors[:username].any? ? @Usuario.errors[:username].to_s[/\w([^"]*)/] : "" %>
+	        </span>
+			</div>
+			</div>
+				<div class="col-sm-4"></div>	
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+				<%= f.text_field(:Password, class: "form-control",placeholder:"Password", type:"password")%>
+				</div>
+				<div class="col-sm-4"></div>	
+			</div>
+				<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+				<%= f.text_field(:RepetPassword, class: "form-control",placeholder:"RepetPassword", type:"password")%>
+				</div>
+				<div class="col-sm-4"></div>	
+			</div>
+			</div>
+			<br>
+			<div class="form-group">
+			<div class="row">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4">
+
+					<div class="btn-group btn-group-justified" role="group" >
+					  <div class="btn-group" role="group">
+							<%= f.submit(class: "btn btn-primary",value:'Registrar') %>
+					  </div>
+
+					</div>
+
+		    		<br>
+		    		<br>
+		    		<%=link_to "Login", :action => "login"%>
+					</div>
+					<div class="col-sm-4"></div>	
+				</div>
+		    
+
+			</div>
+	<% end %>
+
+		</fieldset>
+<!--
+<%=link_to "Nuevo", :controller =>"usuario", :action => "new"%>
+-->

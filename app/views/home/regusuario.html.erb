@@ -1,0 +1,95 @@
+<br>
+<br>
+<br>
+<br>
+	<%= form_for :post,:url =>{:action=>:crear} do |f| %>
+
+	<div class="form-group">
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+
+				<fieldset>
+					<legend>Datos Persona</legend>
+				<%= f.text_field(:Nombre, class: "form-control",placeholder:"Nombre")%>
+				</div>
+				<div class="col-sm-4"></div>	
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+				<%= f.text_field(:Apellido, class: "form-control",placeholder:"Apellido")%>
+				</div>
+				<div class="col-sm-4"></div>	
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+				<%= f.text_field(:Pais, class: "form-control",placeholder:"Pais")%>
+				</div>
+				<div class="col-sm-4"></div>	
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+				<%= f.text_field(:Email, class: "form-control",placeholder:"Email")%>
+				</div>
+				<div class="col-sm-4"></div>	
+			</div>
+
+			<div class="row">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+			<br>
+			<fieldset>
+				<legend>Datos Usuario</legend>
+			<%= f.text_field(:Username, class: "form-control",placeholder:"Username")%>
+			</div>
+				<div class="col-sm-4"></div>	
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+				<%= f.text_field(:Password, class: "form-control",placeholder:"Password", type:"password")%>
+				</div>
+				<div class="col-sm-4"></div>	
+			</div>
+				<div class="row">
+				<div class="col-sm-4"></div>
+				<div class="col-sm-4">
+				<%= f.text_field(:RepetPassword, class: "form-control",placeholder:"RepetPassword", type:"password")%>
+				</div>
+				<div class="col-sm-4"></div>	
+			</div>
+			</div>
+			<br>
+			<div class="form-group">
+			<div class="row">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4">
+
+					<div class="btn-group btn-group-justified" role="group" >
+					  <div class="btn-group" role="group">
+							<%= f.submit(class: "btn btn-primary",value:'Registrar') %>
+					  </div>
+
+					</div>
+
+		    		<br>
+		    		<br>
+		    		<%=link_to "Login", :action => "login"%>
+					</div>
+					<div class="col-sm-4"></div>	
+				</div>
+		    
+
+			</div>
+	<% end %>
+<!--
+<%=link_to "Nuevo", :controller =>"consulta", :action => "new"%>
+-->
+		</fieldset>

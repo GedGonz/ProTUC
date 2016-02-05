@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  saldo: 9.99
+  fechacrea: 2016-02-02 21:43:50
+  tuc_id: 
+
+two:
+  saldo: 9.99
+  fechacrea: 2016-02-02 21:43:50
+  tuc_id: 

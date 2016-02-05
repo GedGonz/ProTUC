@@ -1,0 +1,56 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.Log
+{
+
+	width: 5em;
+	height: 5em;
+}
+
+body
+{
+	font-family: Arial,'Helvetica';
+}
+
+.header
+{
+
+/*	background: #0F81C9;*/
+	height: 5em;
+
+background:#009BD6;
+color: #FFF;
+display: block;
+font: 14px/1.3 Arial,sans-serif;
+margin-bottom: 10px;
+position: relative;
+}
+.Log
+{
+
+	width: 5em;
+	height: 5em;
+}
+.logo
+{
+	padding-left: 2em;
+	padding-top: 0.1em;
+	font-size: 19px;
+	margin-right: 0px;
+}
+
+.row
+{
+	margin-right: 0px;
+}
+.footer {
+    background-color: #0F81C9;
+    position: relative;
+    z-index: 1;
+    height: 2em;
+}

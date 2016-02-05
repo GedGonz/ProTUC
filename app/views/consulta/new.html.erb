@@ -1,0 +1,35 @@
+	<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+
+			<fieldset>
+<legend>Consulta TUC</legend>
+			<%= f.text_field(:Nombre, class: "form-control",placeholder:"Nombre")%>
+			</div>
+			<div class="col-sm-3"></div>	
+		</div>
+
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+			<%= f.text_field(:NumTuc, class: "form-control",placeholder:"Tarjeta")%>
+			</div>
+			<div class="col-sm-3"></div>	
+		</div>
+		
+
+	</div>
+	<br>
+	<div class="form-group">
+	<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6">
+			<%= f.submit(class: "btn btn-primary",value:'Consultar') %>
+    <%= f.button(:Cancelar, class: "btn btn-default") %>
+			</div>
+			<div class="col-sm-3"></div>	
+		</div>
+    
+	</div>
+<% end %>
+</fieldset>

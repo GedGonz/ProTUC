@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numerotarjeta: 1
+  fechacrea: 2016-02-02 21:43:42
+  usuario_id: 
+
+two:
+  numerotarjeta: 1
+  fechacrea: 2016-02-02 21:43:42
+  usuario_id: 
